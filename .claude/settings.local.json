@@ -4,7 +4,10 @@
       "Bash(dir)",
       "Bash(cat:*)",
       "Bash(del default.php)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
