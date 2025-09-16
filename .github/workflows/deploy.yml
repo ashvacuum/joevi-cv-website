@@ -1,47 +1,20 @@
-name: Deploy to Hostinger
+name: Deploy CV Website to Hostinger
 
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+  workflow_dispatch:
 
 jobs:
   deploy:
+    name: Deploy to Hostinger
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: 🚀 Checkout Repository
       uses: actions/checkout@v4
 
-    - name: Setup Node.js (optional for future enhancements)
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-
-    - name: Install dependencies (if package.json exists)
-      run: |
-        if [ -f package.json ]; then
-          npm ci
-        fi
-
-    - name: Build project (if build script exists)
-      run: |
-        if [ -f package.json ] && npm run build --if-present; then
-          echo "Build completed"
-        else
-          echo "No build step required"
-        fi
-
-    - name: Run tests (if test script exists)
-      run: |
-        if [ -f package.json ] && npm test --if-present; then
-          echo "Tests completed"
-        else
-          echo "No tests to run"
-        fi
-
-    - name: Deploy to Hostinger via FTP
+    - name: 📦 Deploy to Hostinger via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
@@ -55,21 +28,14 @@ jobs:
           **/node_modules/**
           **/.github/**
           **/README.md
+          **/DEPLOYMENT.md
+          **/SECURITY.md
           **/package*.json
           **/.DS_Store
           **/Thumbs.db
           **/*.log
+          **/.gitignore
+          **/CV.txt
 
-    - name: Verify deployment
-      run: |
-        echo "✅ Deployment completed successfully!"
-        echo "🚀 Your CV website should now be live at your Hostinger domain"
-
-    - name: Notify deployment status
-      if: always()
-      run: |
-        if [ ${{ job.status }} == 'success' ]; then
-          echo "🎉 Deployment successful! Your CV is now live."
-        else
-          echo "❌ Deployment failed. Check the logs above for details."
-        fi
+    - name: ✅ Deployment Complete
+      run: echo "🎉 Your CV website is now live at adrianoroceo.com!"
