@@ -237,8 +237,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Stats counter animation
+    // Stats counter animation (runs only once)
+    let statsAnimated = false;
     function animateStats() {
+        if (statsAnimated) return;
+        statsAnimated = true;
+
         const statNumbers = document.querySelectorAll('.stat-number');
         statNumbers.forEach(stat => {
             const finalValue = parseInt(stat.textContent);

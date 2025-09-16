@@ -397,10 +397,10 @@ section {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .about-text .lead {
