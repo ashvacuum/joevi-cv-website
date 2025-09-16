@@ -3,7 +3,8 @@
     "allow": [
       "Bash(dir)",
       "Bash(cat:*)",
-      "Bash(del default.php)"
+      "Bash(del default.php)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

@@ -23,7 +23,7 @@ git add .
 git commit -m "Initial commit: Modern CV website for Joevi Adrian Oroceo"
 
 # Create repository on GitHub and add remote
-git remote add origin https://github.com/YOUR_USERNAME/joevi-cv-website.git
+git remote add origin https://github.com/ashvacuum/joevi-cv-website.git
 
 # Push to GitHub
 git push -u origin main
@@ -47,8 +47,8 @@ git push -u origin main
 
 | Secret Name | Value | Example |
 |-------------|-------|---------|
-| `FTP_SERVER` | Your FTP server address | `ftp.yoursite.com` |
-| `FTP_USERNAME` | Your FTP username | `u123456789.yoursite` |
+| `FTP_SERVER` | Your FTP server address | `ftp.adrianoroceo.com` |
+| `FTP_USERNAME` | Your FTP username | `u123456789.adrianoroceo` |
 | `FTP_PASSWORD` | Your FTP password | `your_secure_password` |
 
 ### 4. Test the Deployment

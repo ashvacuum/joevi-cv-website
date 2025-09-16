@@ -1,13 +1,13 @@
 # 🎮 Joevi Adrian Oroceo - Professional CV Website
 
-[![Deploy to Hostinger](https://github.com/YOUR_USERNAME/joevi-cv-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/YOUR_USERNAME/joevi-cv-website/actions/workflows/deploy.yml)
-[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fyoursite.com)](https://yoursite.com)
+[![Deploy to Hostinger](https://github.com/ashvacuum/joevi-cv-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/ashvacuum/joevi-cv-website/actions/workflows/deploy.yml)
+[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fadrianoroceo.com)](https://adrianoroceo.com)
 
 A modern, interactive CV website showcasing game development expertise with stunning animations, responsive design, and **automated CI/CD deployment**.
 
 ## 🚀 Live Website
 
-**Visit:** [yoursite.com](https://yoursite.com)
+**Visit:** [adrianoroceo.com](https://adrianoroceo.com)
 
 ## ✨ Features
 
@@ -136,4 +136,4 @@ This project is created for personal portfolio use. Feel free to use as inspirat
 
 ---
 
-*Last updated: September 2024*
+*Last updated: December 2024*

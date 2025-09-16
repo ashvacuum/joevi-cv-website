@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/joevi-cv-website.git"
+    "url": "git+https://github.com/ashvacuum/joevi-cv-website.git"
   },
   "keywords": [
     "cv",
@@ -32,9 +32,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/joevi-cv-website/issues"
+    "url": "https://github.com/ashvacuum/joevi-cv-website/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/joevi-cv-website#readme",
+  "homepage": "https://adrianoroceo.com",
   "devDependencies": {},
   "engines": {
     "node": ">=14.0.0"

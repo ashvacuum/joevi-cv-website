@@ -33,10 +33,15 @@
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# Force HTTPS (uncomment when you have SSL)
-# RewriteEngine On
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Force HTTPS for adrianoroceo.com
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?adrianoroceo\.com$ [NC]
+RewriteRule ^(.*)$ https://adrianoroceo.com%{REQUEST_URI} [L,R=301]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.adrianoroceo\.com$ [NC]
+RewriteRule ^(.*)$ https://adrianoroceo.com%{REQUEST_URI} [L,R=301]
 
 # Pretty URLs and error handling
 ErrorDocument 404 /index.html
