@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joevi Adrian Oroceo - Game Development Portfolio</title>
+    <meta name="description" content="Portfolio showcasing 15+ game development projects including Unity, Unreal Engine, mobile games, and web applications.">
+    <meta name="keywords" content="Game Developer Portfolio, Unity Projects, Mobile Games, PlayFab, Firebase, Game Development">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Joevi Adrian Oroceo - Game Development Portfolio">
+    <meta property="og:description" content="Explore 15+ game development projects from indie games to commercial mobile apps.">
+    <meta property="og:url" content="https://adrianoroceo.com/portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=630&fit=crop&auto=format&q=80">
+
+    <link rel="canonical" href="https://adrianoroceo.com/portfolio">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0idXJsKCNncmFkaWVudDApIi8+CjxwYXRoIGQ9Ik04IDE2SDEwVjIySDEyVjE2SDE0VjE0SDhWMTZaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTYgMTRWMjJIMThWMTlIMjBWMjJIMjJWMTRIMjBWMTdIMThWMTRIMTZaIiBmaWxsPSJ3aGl0ZSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudDAiIHgxPSIwIiB5MT0iMCIgeDI9IjMyIiB5Mj0iMzIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzY2N0VFQSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3NjRCQTIiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K">
+
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Critical CSS -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, sans-serif; background: #0a0e27; color: #e1e5e9; overflow-x: hidden; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .hero { min-height: 50vh; display: flex; align-items: center; text-align: center; }
+        .hero h1 { font-size: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JA</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">CV</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Game Development Portfolio</h1>
+            <p class="hero-subtitle">15+ Projects | 5 Years Experience | Unity & Unreal Engine</p>
+            <div class="portfolio-stats">
+                <div class="stat">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Companies</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Published Games</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="indie">Indie Games</button>
+                <button class="filter-btn" data-filter="taktyl">Taktyl Studios</button>
+                <button class="filter-btn" data-filter="tictoc">Tic Toc Games</button>
+                <button class="filter-btn" data-filter="unity">Unity</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-grid">
+
+                <!-- Indie Projects -->
+                <div class="project-card" data-category="indie unity mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://apkpure.com/graduwait/com.BunchaStudents.Graduwait" target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i> Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Match 3 Game</h3>
+                            <span class="project-date">Dec 2018</span>
+                        </div>
+                        <p class="project-description">Android match-3 puzzle game with custom algorithm and level design tools.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Android</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Custom Match 3 algorithm</li>
+                                <li>Level design tool</li>
+                                <li>Level generation system</li>
+                                <li>Save state management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="indie unity">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://drive.google.com/open?id=1yLLnsfJ5a4pmn3GAAI3XT6hR-Tuz25ri" target="_blank" rel="noopener">
+                                    <i class="fas fa-download"></i> Download
+                                </a>
+                                <a href="https://github.com/ashvacuum/ShooterSOLID" target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i> Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Top Down Shooter</h3>
+                            <span class="project-date">May 2019</span>
+                        </div>
+                        <p class="project-description">PC action game with AI pathfinding and procedural level generation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">PC</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>2D A* Pathfinding algorithm</li>
+                                <li>Achievement system</li>
+                                <li>Random level generation</li>
+                                <li>Advanced enemy AI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="indie unity">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ashvacuum.itch.io/shift" target="_blank" rel="noopener">
+                                    <i class="fas fa-gamepad"></i> Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Project Shift</h3>
+                            <span class="project-date">May 2020</span>
+                        </div>
+                        <p class="project-description">Racing game with advanced physics and online leaderboards.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">PlayFab</span>
+                            <span class="tech-tag">PC</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Physics system with drag & drifting</li>
+                                <li>PlayFab leaderboards</li>
+                                <li>Seamless login system</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="indie unity gamejam">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://globalgamejam.org/2019/games/tahanan" target="_blank" rel="noopener">
+                                    <i class="fas fa-trophy"></i> GGJ Entry
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Project Tahanan</h3>
+                            <span class="project-date">Jan 2019</span>
+                        </div>
+                        <p class="project-description">Global Game Jam 2019 entry with focus on home and family themes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Game Jam</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Project management</li>
+                                <li>Movement system</li>
+                                <li>Level design</li>
+                                <li>UI development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="indie unity gamejam">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://globalgamejam.org/2020/games/scraps-8" target="_blank" rel="noopener">
+                                    <i class="fas fa-trophy"></i> GGJ Entry
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Project Scraps</h3>
+                            <span class="project-date">Jan 2020</span>
+                        </div>
+                        <p class="project-description">Cooperative puzzle game created for Global Game Jam 2020.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Multiplayer</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Item combination system</li>
+                                <li>2-player controls</li>
+                                <li>Project management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taktyl Studios Projects -->
+                <div class="project-card featured" data-category="taktyl unity mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1ychg-i1KY5s7_lRRL5_bF1FKgnBQtev1/view" target="_blank" rel="noopener">
+                                    <i class="fas fa-play"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>SushiDoku</h3>
+                            <span class="project-date">Jun 2019</span>
+                        </div>
+                        <p class="project-description">Innovative Sudoku variant with sushi theme for iOS and Android.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">iOS</span>
+                            <span class="tech-tag">Android</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Custom Sudoku algorithm</li>
+                                <li>Advanced hint system</li>
+                                <li>Object pooling optimization</li>
+                                <li>Tactile game feel design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured" data-category="taktyl mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.logitech.logiph" target="_blank" rel="noopener">
+                                    <i class="fab fa-google-play"></i> Play Store
+                                </a>
+                                <a href="https://drive.google.com/file/d/1oruhqcC7Znm9FiAGeXnU2-SFyp1msAS-/view" target="_blank" rel="noopener">
+                                    <i class="fas fa-play"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Logi PH</h3>
+                            <span class="project-date">Jul 2019</span>
+                        </div>
+                        <p class="project-description">Mobile app with loot box mechanics and analytics integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Mobile</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Loot box algorithm</li>
+                                <li>Firebase analytics</li>
+                                <li>Database integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="taktyl web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-status cancelled">Cancelled</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Project Udenna</h3>
+                            <span class="project-date">Mar 2020</span>
+                        </div>
+                        <p class="project-description">Web-based roulette game with daily winner limitations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PlayFab</span>
+                            <span class="tech-tag">Phaser</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Roulette algorithm</li>
+                                <li>Daily winner limits</li>
+                                <li>Analytics integration</li>
+                                <li>Leaderboard system</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured" data-category="taktyl unity mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="project-status">Conference App</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Project Vircon (Hive+)</h3>
+                            <span class="project-date">Sep 2020</span>
+                        </div>
+                        <p class="project-description">3D multiplayer virtual conference app supporting 200+ users.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">Photon</span>
+                            <span class="tech-tag">PlayFab</span>
+                            <span class="tech-tag">Mobile</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>200+ user multiplayer</li>
+                                <li>Live video syncing</li>
+                                <li>Internal webviews</li>
+                                <li>3D conference spaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tic Toc Games Projects -->
+                <div class="project-card featured" data-category="tictoc unity mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.sonypicturestelevision.WheelPuzzlePop" target="_blank" rel="noopener">
+                                    <i class="fab fa-google-play"></i> Play Store
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Wheel of Fortune: Pop Bubbles</h3>
+                            <span class="project-date">Nov 2020</span>
+                        </div>
+                        <p class="project-description">Licensed Wheel of Fortune bubble puzzle game for mobile platforms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Mobile</span>
+                            <span class="tech-tag">Licensed</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Scheduled event system</li>
+                                <li>User leaderboards</li>
+                                <li>Remote config system</li>
+                                <li>UI system development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured" data-category="tictoc unity mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.n3twork.funkopopblitz" target="_blank" rel="noopener">
+                                    <i class="fab fa-google-play"></i> Play Store
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Funko Pop Blitz</h3>
+                            <span class="project-date">Jun 2022</span>
+                        </div>
+                        <p class="project-description">Match-3 puzzle game featuring popular Funko Pop characters.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">PlayFab</span>
+                            <span class="tech-tag">Mobile</span>
+                            <span class="tech-tag">Licensed</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Gameplay implementation</li>
+                                <li>Bug fixing & optimization</li>
+                                <li>Feature development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Interested in My Work?</h2>
+            <p>Let's discuss your next game development project</p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="index.html" class="btn btn-secondary">View CV</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Joevi Adrian Oroceo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="portfolio.js" defer></script>
+</body>
+</html>
