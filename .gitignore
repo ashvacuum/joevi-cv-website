@@ -50,3 +50,7 @@ coverage/
 
 # FTP deployment logs
 .ftp-deploy-sync-state.json
+
+# Portfolio documents (private)
+Portfolio List*.docx
+*.docx
