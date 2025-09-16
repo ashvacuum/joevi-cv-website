@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap location (add when available)
+# Sitemap: https://yoursite.com/sitemap.xml
+
+# Disallow sensitive directories
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /temp/

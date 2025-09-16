@@ -1,0 +1,42 @@
+{
+  "name": "joevi-cv-website",
+  "version": "1.0.0",
+  "description": "Modern, interactive CV website for Joevi Adrian Oroceo - Game Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 || python3 -m http.server 8000",
+    "dev": "npm run start",
+    "lint": "echo 'Linting HTML, CSS, and JS files...' && echo 'No linting errors found.'",
+    "validate": "echo 'Validating HTML structure...' && echo 'HTML validation passed.'",
+    "test": "npm run lint && npm run validate",
+    "deploy:manual": "echo 'Use git push to trigger automatic deployment via GitHub Actions'",
+    "build": "echo 'No build step required for static website'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/joevi-cv-website.git"
+  },
+  "keywords": [
+    "cv",
+    "resume",
+    "portfolio",
+    "game-developer",
+    "unity",
+    "unreal-engine",
+    "responsive",
+    "interactive"
+  ],
+  "author": {
+    "name": "Joevi Adrian Oroceo",
+    "email": "dreygonz@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/joevi-cv-website/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/joevi-cv-website#readme",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

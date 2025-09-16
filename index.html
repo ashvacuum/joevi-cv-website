@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joevi Adrian Oroceo - Game Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JA</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="print-btn-nav">
+                <button onclick="window.print()" class="print-button">
+                    <i class="fas fa-download"></i> PDF
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text">Joevi Adrian Oroceo</span>
+                </h1>
+                <h2 class="hero-subtitle">Senior Game Developer</h2>
+                <p class="hero-description">
+                    A highly motivated, assertive and responsible individual offering 5 years of experience and a track record of getting things done and building upon foundations of codebases. Looking to expand horizons by working with world-class teams in game development.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <button onclick="window.print()" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download CV
+                    </button>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:dreygonz@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://ashvacuum.itch.io/" class="social-link">
+                        <i class="fab fa-itch-io"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-glow"></div>
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <div class="dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="filename">GameDeveloper.cs</span>
+                        </div>
+                        <div class="code-content">
+                            <span class="comment">// Senior Game Developer</span><br>
+                            <span class="keyword">public class</span> <span class="class-name">GameDeveloper</span> {<br>
+                            &nbsp;&nbsp;<span class="property">Experience</span> = <span class="string">"5 years"</span>;<br>
+                            &nbsp;&nbsp;<span class="property">Skills</span> = [<span class="string">"Unity"</span>, <span class="string">"Unreal"</span>, <span class="string">"C++"</span>];<br>
+                            &nbsp;&nbsp;<span class="property">Passion</span> = <span class="string">"Creating Games"</span>;<br>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Game Developer with 5 years of experience specializing in Unity and Unreal Engine development.
+                    </p>
+                    <p>
+                        I'm passionate about creating immersive gaming experiences and have worked across various game development roles, from junior developer to senior positions. My expertise spans multiple platforms, multiplayer systems, and performance optimization.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Game Engines</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Dec 2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior Game Developer</h3>
+                        <h4>Stratton Studios</h4>
+                        <ul>
+                            <li>Optimized game performance by fixing critical bugs, reducing memory usage, and eliminating server crashes</li>
+                            <li>Created a clean, intuitive UI with customizable elements that enhanced player experience across different screen sizes</li>
+                            <li>Implemented stable multiplayer functionality allowing thousands of players to interact simultaneously in a shared game world</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Mar 2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Part Time Instructor</h3>
+                        <h4>CIIT Philippines</h4>
+                        <ul>
+                            <li>Implement classroom management techniques that promote critical thinking skills, strong work attitudes, and positive life values</li>
+                            <li>Use instructional technologies and innovations to enhance student learning</li>
+                            <li>Demonstrate mastery of the content and teaching skills of the subjects I teach</li>
+                            <li>Monitor student performance through clear and comprehensive standards transparent to the students, and provide helpful feedback for their improvement</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Aug 2023 - Oct 2024</div>
+                    <div class="timeline-content">
+                        <h3>Unreal Engine Game Programmer</h3>
+                        <h4>Metasimz</h4>
+                        <ul>
+                            <li>Developed and optimized immersive games using Unreal Engine, ensuring seamless gameplay experiences</li>
+                            <li>Created and modified game play mechanics and features using C++ and Blueprints, translating design concepts into functional code</li>
+                            <li>Employed performance optimization techniques to achieve smooth game play on various devices, addressing bottlenecks and memory issues</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Nov 2020 - Aug 2023</div>
+                    <div class="timeline-content">
+                        <h3>Game Programmer</h3>
+                        <h4>Tic Toc Games</h4>
+                        <ul>
+                            <li>Program gameplay and application features in Unity for mobile and online games</li>
+                            <li>Collaborate closely with art and design team members to deliver polished, visually impressive, optimized games</li>
+                            <li>Work with production staff to identify technical risks and breakdown gameplay into user stories and scenarios</li>
+                            <li>Began working with AWS Services and implementing them into games</li>
+                            <li>Greater proficiency with firebase development</li>
+                            <li>Enhanced knowledge on java development with Unity via plug ins</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun 2019 - Nov 2020</div>
+                    <div class="timeline-content">
+                        <h3>Junior Game Developer</h3>
+                        <h4>Taktyl Studios</h4>
+                        <ul>
+                            <li>Worked with Web Developers and Backend developers to develop companion applications to enhance customer relations management with front-end applications</li>
+                            <li>Spearheaded transition of backend API to use Azure PlayFab</li>
+                            <li>Participated in product planning alongside management to provide estimates</li>
+                            <li>Enhanced Skills in online Programming by working with Photon Realtime in proprietary software for virtual conferencing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Hard Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon unity-icon">U</div>
+                            <div class="skill-info">
+                                <h4>Unity 3D</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon unreal-icon">UE</div>
+                            <div class="skill-info">
+                                <h4>Unreal Engine</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div>
+                            <div class="skill-info">
+                                <h4>C++</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-hashtag"></i></div>
+                            <div class="skill-info">
+                                <h4>C#</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>PostgreSQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-info">
+                                <h4>Node.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                            <div class="skill-info">
+                                <h4>Unity Multiplayer</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="skill-info">
+                                <h4>PlayFab</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="soft-skills">
+                        <div class="soft-skill">
+                            <i class="fas fa-presentation"></i>
+                            <span>Presentation</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analytical</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-ear-listen"></i>
+                            <span>Listening</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>BSc in Multimedia and Computing - Game Development</h3>
+                        <h4>CIIT Philippines, Philippines</h4>
+                        <p class="education-note">Finance Manager for the Student Council</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="languages">
+                <h3>Languages</h3>
+                <div class="language-item">
+                    <span class="language-name">English</span>
+                    <span class="language-level">Full professional proficiency</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:dreygonz@gmail.com">dreygonz@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+639993805783">+63 999 380 5783</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>877 Kasipagan St. Brgy. Plainview, Mandaluyong City, Philippines 1550</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="mailto:dreygonz@gmail.com" class="social-link-large">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="#" class="social-link-large">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://ashvacuum.itch.io/" class="social-link-large">
+                            <i class="fab fa-itch-io"></i>
+                            <span>Itch.io</span>
+                        </a>
+                        <a href="#" class="social-link-large">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Joevi Adrian Oroceo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

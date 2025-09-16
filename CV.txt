@@ -1,0 +1,79 @@
+Joevi Adrian oroceo
+877 Kasipagan St. Brgy. Plainview, Mandaluyong City, Philippines 1550 · +63 999 380 5783
+
+             dreygonz@gmail.com           LinkedIn           ashvacuum.itch.io/       GitHub                                                               
+A highly motivated, assertive and responsible individual offering 5 years of experience and a track record of getting things done and building upon foundations of codebases. I´m looking to expand my horizons by working with world-class teams and getting first hand experience in new environments while improving work ethic especially in the field of programming and specifically game development.
+
+
+Experience
+December 2024 – Present
+Senior Game Developer, Stratton Studios
+Optimized game performance by fixing critical bugs, reducing memory usage, and eliminating server crashes..
+Created a clean, intuitive UI with customizable elements that enhanced player experience across different screen sizes.
+Implemented stable multiplayer functionality allowing thousands of players to interact simultaneously in a shared game world.
+
+March 2022 – Present
+Part Time Instructor, CIIT Philippines
+Implement classroom management techniques that promote critical thinking skills, strong work attitudes, and positive life values.
+Use instructional technologies and innovations to enhance student learning.
+Demonstrate mastery of the content and teaching skills of the subjects I teach.
+Monitor student performance through clear and comprehensive standards transparent to the students, and provide helpful feedback for their improvement.
+
+August 2023 – October 2024
+Unreal Engine Game Programmer, Metasimz
+Developed and optimized immersive games using Unreal Engine, ensuring seamless gameplay experiences.
+Created and modified game play mechanics and features using C++ and Blueprints, translating design concepts into functional code.
+Employed performance optimization techniques to achieve smooth game play on various devices, addressing bottlenecks and memory issues
+
+November 2020 – August 2023
+Game Programmer, Tic Toc Games
+Program gameplay and application features in Unity for mobile and online games.
+Collaborate closely with art and design team members to deliver polished, visually impressive, optimized games.
+Work with production staff to identify technical risks and breakdown gameplay into user stories and scenarios.
+Began working with AWS Services and implementing them into games
+Greater proficiency with firebase development
+Enhanced knowledge on java development with Unity via plug ins
+
+June 2019 – November 2020
+Junior Game Developer, Taktyl Studios
+Worked with Web Developers and Backend developers to develop companion applications to enhance customer relations management with front-end applications
+Spearheaded transition of backend API to use Azure PlayFab
+Participated in product planning alongside management to provide estimates
+Enhanced Skills in online Programming by working with Photon Realtime in proprietary software for virtual conferencing.
+
+
+Education
+BSc in Multimedia and Computing - Game Development, CIIT Philippines, Philippines
+
+Finance Manager for the Student Council
+
+
+Skills
+HARD SKILLS 
+PlayFab
+PostgreSQL
+Unity 3D
+C#
+Unreal Engine
+Gameplay Ability System
+C++
+Node.js
+Unity DOTS
+Unity Multiplayer Networking
+SOFT SKILLS
+Presentation 
+Communication
+Analytical
+Listening
+
+Languages
+                                            
+English; Full professional proficiency
+
+
+
+
+
+
+
+
