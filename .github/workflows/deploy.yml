@@ -36,6 +36,13 @@ jobs:
           **/*.log
           **/.gitignore
           **/CV.txt
+          **/MANUAL_DEPLOY.md
+          **/*.docx
+          **/*.docx.html
+          **/*_old.html
+          **/*_old.css
+          **/*_old.js
+          **/resume.html
 
     - name: ✅ Deployment Complete
       run: echo "🎉 Your CV website is now live at adrianoroceo.com!"

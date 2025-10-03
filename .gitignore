@@ -47,6 +47,9 @@ coverage/
 # Backup files
 *.bak
 *.tmp
+*_old.html
+*_old.css
+*_old.js
 
 # FTP deployment logs
 .ftp-deploy-sync-state.json
