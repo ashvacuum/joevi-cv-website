@@ -25,9 +25,9 @@ jobs:
     - name: 📂 Sync files via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ${{ secrets.GH_DEPLOY_FTP_SERVER }}
-        username: ${{ secrets.GH_DEPLOY_FTP_USERNAME }}
-        password: ${{ secrets.GH_DEPLOY_FTP_PASSWORD }}
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
         port: 21
         server-dir: /home/u403253565/domains/adrianoroceo.com/public_html/
