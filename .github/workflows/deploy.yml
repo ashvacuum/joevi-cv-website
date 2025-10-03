@@ -25,9 +25,9 @@ jobs:
     - name: 📂 Sync files with FTP server
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        server: ${{ secrets.GH_DEPLOY_FTP_SERVER }}
+        username: ${{ secrets.GH_DEPLOY_FTP_USERNAME }}
+        password: ${{ secrets.GH_DEPLOY_FTP_PASSWORD }}
         port: 21
         exclude: |
           **/.git*
