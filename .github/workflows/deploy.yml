@@ -11,34 +11,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 🚀 Checkout Repository
+    - name: 🗂️ Checkout repository
       uses: actions/checkout@v4
 
     - name: 📋 List files to be deployed
       run: |
         echo "Files that will be deployed:"
-        ls -lh index.html robots.txt manifest.json .htaccess DEPLOYMENT_TEST.html 2>/dev/null || echo "Some files missing"
-        echo "---"
-        echo "index.html size:"
-        ls -lh index.html
-        echo "---"
-        echo "Current directory:"
-        pwd
-        echo "---"
-        echo "All files in repo:"
-        find . -maxdepth 1 -type f -name "*.html" -o -name "*.txt" -o -name "*.json" -o -name ".htaccess"
+        ls -lh *.html *.txt *.json .htaccess 2>/dev/null || echo "Listing all HTML files..."
+        find . -maxdepth 1 -type f \( -name "*.html" -o -name "*.txt" -o -name "*.json" -o -name ".htaccess" \)
         echo "---"
         echo "Deployment timestamp: $(date)"
 
-    - name: 📦 Deploy to Hostinger via FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+    - name: 📂 Sync files with FTP server
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftps
         port: 21
-        server-dir: /public_html/
         exclude: |
           **/.git*
           **/.git*/**
@@ -60,25 +50,13 @@ jobs:
           **/*_old.css
           **/*_old.js
           **/resume.html
-        log-level: verbose
 
     - name: ✅ Deployment Complete
       run: |
         echo "🎉 Deployment finished!"
-        echo "---"
-        echo "🔍 WHERE TO FIND YOUR FILES:"
-        echo "---"
-        echo "Deployed to server: ${{ secrets.FTP_SERVER }}"
-        echo "Target directory: /public_html/"
-        echo "---"
-        echo "📍 TEST URLs to check RIGHT NOW:"
-        echo "1. https://adrianoroceo.com/DEPLOYMENT_TEST.html"
-        echo "2. https://www.adrianoroceo.com/DEPLOYMENT_TEST.html"
-        echo "3. http://adrianoroceo.com/DEPLOYMENT_TEST.html"
-        echo "---"
-        echo "If you see a BRIGHT PINK page, deployment worked!"
-        echo "If you get 404, files are in a different directory."
-        echo "---"
-        echo "Main site URLs:"
-        echo "- https://adrianoroceo.com"
-        echo "- https://adrianoroceo.com/index.html"
+        echo ""
+        echo "📍 Check your site:"
+        echo "  • https://adrianoroceo.com"
+        echo "  • https://adrianoroceo.com/DEPLOYMENT_TEST.html (pink test page)"
+        echo ""
+        echo "Version: 2.0.0 | Updated: $(date)"
