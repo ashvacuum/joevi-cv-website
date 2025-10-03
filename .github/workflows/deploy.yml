@@ -30,18 +30,37 @@ jobs:
         echo "---"
         echo "Deployment timestamp: $(date)"
 
-    - name: 📦 Deploy to Hostinger
-      uses: ArmynC/ArminC-AutoSPSourcesS@v1.4
+    - name: 📦 Deploy to Hostinger via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        # Hostinger details from secrets
-        ftp-server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        # Local and remote paths
-        local-path: ./
-        remote-path: /public_html/
-        # Options
-        git-ftp-args: --insecure --verbose
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftps
+        port: 21
+        server-dir: /public_html/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.github/**
+          **/README.md
+          **/DEPLOYMENT.md
+          **/SECURITY.md
+          **/package*.json
+          **/.DS_Store
+          **/Thumbs.db
+          **/*.log
+          **/.gitignore
+          **/CV.txt
+          **/MANUAL_DEPLOY.md
+          **/*.docx
+          **/*.docx.html
+          **/*_old.html
+          **/*_old.css
+          **/*_old.js
+          **/resume.html
+        log-level: verbose
 
     - name: ✅ Deployment Complete
       run: |
