@@ -22,13 +22,17 @@ jobs:
         echo "---"
         echo "Deployment timestamp: $(date)"
 
-    - name: 📂 Sync files with FTP server
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    - name: 📂 Sync files via SFTP
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
         server: ${{ secrets.GH_DEPLOY_FTP_SERVER }}
         username: ${{ secrets.GH_DEPLOY_FTP_USERNAME }}
         password: ${{ secrets.GH_DEPLOY_FTP_PASSWORD }}
-        port: 21
+        port: 22
+        local_path: ./
+        remote_path: /public_html/
+        sftp_only: true
+        args: '-o ConnectTimeout=5'
         exclude: |
           **/.git*
           **/.git*/**
