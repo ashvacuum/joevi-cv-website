@@ -34,12 +34,31 @@ When you push to `main`, these files are deployed via GitHub Actions:
 - Upload to: `/public_html/` directory
 
 ### Automatic Deployment
-Simply push to the `main` branch and GitHub Actions will automatically deploy via FTP.
+
+**New workflow using `deploy` branch:**
+
+1. Make your changes on `main` branch
+2. When ready to deploy, merge to `deploy` branch:
 
 ```bash
-git add index.html
-git commit -m "Update CV website"
+# Option 1: Direct push to deploy (if you're on main)
+git checkout deploy
+git merge main
 git push
+
+# Option 2: From main branch
+git push origin main:deploy
+```
+
+The `deploy` branch triggers automatic deployment to Hostinger.
+
+**Quick deploy from main:**
+```bash
+git checkout main
+# Make your changes...
+git add .
+git commit -m "Update CV website"
+git push origin main:deploy  # This deploys!
 ```
 
 ### Backup Files
