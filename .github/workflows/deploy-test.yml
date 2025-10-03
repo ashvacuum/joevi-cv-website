@@ -1,0 +1,50 @@
+name: Test Deploy (Root Directory)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Test Deploy to Root
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🚀 Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: 📦 Deploy to Hostinger Root
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftps
+        port: 21
+        server-dir: /
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.github/**
+          **/README.md
+          **/DEPLOYMENT.md
+          **/SECURITY.md
+          **/package*.json
+          **/.DS_Store
+          **/Thumbs.db
+          **/*.log
+          **/.gitignore
+          **/CV.txt
+          **/MANUAL_DEPLOY.md
+          **/*.docx
+          **/*.docx.html
+          **/*_old.html
+          **/*_old.css
+          **/*_old.js
+          **/resume.html
+        log-level: verbose
+
+    - name: ✅ Test Complete
+      run: |
+        echo "Test deployment to root (/) complete"
+        echo "Check https://adrianoroceo.com/DEPLOYMENT_TEST.html"
