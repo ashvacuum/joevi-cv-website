@@ -2,7 +2,7 @@ name: Deploy CV Website to Hostinger
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ deploy ]
   workflow_dispatch:
 
 jobs:
@@ -30,36 +30,18 @@ jobs:
         echo "---"
         echo "Deployment timestamp: $(date)"
 
-    - name: 📦 Deploy to Hostinger via FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    - name: 📦 Deploy to Hostinger
+      uses: ArmynC/ArminC-AutoSPSourcesS@v1.4
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./
-        server-dir: /public_html/
-        log-level: verbose
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          **/.github/**
-          **/README.md
-          **/DEPLOYMENT.md
-          **/SECURITY.md
-          **/package*.json
-          **/.DS_Store
-          **/Thumbs.db
-          **/*.log
-          **/.gitignore
-          **/CV.txt
-          **/MANUAL_DEPLOY.md
-          **/*.docx
-          **/*.docx.html
-          **/*_old.html
-          **/*_old.css
-          **/*_old.js
-          **/resume.html
+        # Hostinger details from secrets
+        ftp-server: ${{ secrets.FTP_SERVER }}
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        # Local and remote paths
+        local-path: ./
+        remote-path: /public_html/
+        # Options
+        git-ftp-args: --insecure --verbose
 
     - name: ✅ Deployment Complete
       run: |
@@ -67,7 +49,7 @@ jobs:
         echo "---"
         echo "🔍 WHERE TO FIND YOUR FILES:"
         echo "---"
-        echo "Deployed to server: 46.202.138.245"
+        echo "Deployed to server: ${{ secrets.FTP_SERVER }}"
         echo "Target directory: /public_html/"
         echo "---"
         echo "📍 TEST URLs to check RIGHT NOW:"
@@ -81,8 +63,3 @@ jobs:
         echo "Main site URLs:"
         echo "- https://adrianoroceo.com"
         echo "- https://adrianoroceo.com/index.html"
-        echo "---"
-        echo "Check the 'Deploy to Hostinger via FTP' step above for:"
-        echo "- Exact file paths uploaded"
-        echo "- FTP connection status"
-        echo "- Any error messages"
