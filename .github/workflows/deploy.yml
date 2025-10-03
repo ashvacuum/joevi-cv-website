@@ -2,7 +2,7 @@ name: Deploy CV Website to Hostinger
 
 on:
   push:
-    branches: [ deploy ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:

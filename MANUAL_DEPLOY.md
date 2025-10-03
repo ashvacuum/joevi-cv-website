@@ -35,31 +35,16 @@ When you push to `main`, these files are deployed via GitHub Actions:
 
 ### Automatic Deployment
 
-**New workflow using `deploy` branch:**
-
-1. Make your changes on `main` branch
-2. When ready to deploy, merge to `deploy` branch:
+Push to `main` branch to automatically deploy:
 
 ```bash
-# Option 1: Direct push to deploy (if you're on main)
-git checkout deploy
-git merge main
-git push
-
-# Option 2: From main branch
-git push origin main:deploy
-```
-
-The `deploy` branch triggers automatic deployment to Hostinger.
-
-**Quick deploy from main:**
-```bash
-git checkout main
 # Make your changes...
 git add .
 git commit -m "Update CV website"
-git push origin main:deploy  # This deploys!
+git push
 ```
+
+GitHub Actions will automatically deploy to Hostinger.
 
 ### Backup Files
 Old website files are backed up locally as:
