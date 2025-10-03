@@ -30,7 +30,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
         port: 21
-        server-dir: /home/u403253565/domains/adrianoroceo.com/public_html/
+        server-dir: /domains/adrianoroceo.com/public_html/
         exclude: |
           **/.git*
           **/.git*/**
